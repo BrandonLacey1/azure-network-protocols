@@ -29,7 +29,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/PjnikGG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/HDhYuov.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Log back on to your DC PC and choose a random user and once you pick that user, I used his information to login into Client one since all EMPLOYEES have access.
@@ -37,7 +37,7 @@ Log back on to your DC PC and choose a random user and once you pick that user, 
 <br />
 
 <p>
-<img src="https://i.imgur.com/Jsfmof8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/tWQEaln.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next on the DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”. 
@@ -45,7 +45,7 @@ Next on the DC-1, on the C:\ drive, create 4 folders: “read-access”, “writ
 <br />
 
 <p>
-<img src="https://i.imgur.com/AMly4Ky.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oCSon6e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Then set the following permissions (share the folder) for the “Domain Users” group:
@@ -57,7 +57,7 @@ Repeat the same process for the others.
 <br />
 
 <p>
-<img src="https://i.imgur.com/NXM0e0W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/N2PVJX9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 On Client-1, navigate to the shared folder (start, run, \\dc-1). This will take you too the shared folders. We are a normal user.
@@ -65,7 +65,7 @@ On Client-1, navigate to the shared folder (start, run, \\dc-1). This will take 
 <br />
 
 <p>
-<img src="https://i.imgur.com/0WZ9OxK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TuXLbYv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 These are the shared folders
@@ -73,7 +73,7 @@ These are the shared folders
 <br />
 
 <p>
-<img src="https://i.imgur.com/FaKABXm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/hIZMZSA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 This shows that the user doesn’t have permission. The user can't access the no-access folder. 
@@ -81,7 +81,7 @@ This shows that the user doesn’t have permission. The user can't access the no
 <br />
 
 <p>
-<img src="https://i.imgur.com/nKfHWSq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/R5UZIue.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 The same for this as well. The user can't access the read-access folder.
@@ -89,7 +89,7 @@ The same for this as well. The user can't access the read-access folder.
 <br />
 
 <p>
-<img src="https://i.imgur.com/cpc0PQg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RmlPj8z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 But however in the write-access, the user can access it. Therefore this user on has access to write-access and nothing else.
